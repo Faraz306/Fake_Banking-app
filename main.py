@@ -1,11 +1,9 @@
 import streamlit as st
-import winsound
 
 st.title("YF Bank")
 password = st.text_input("Enter your password", key="5", type="password")
 if password == '':
     st.error("Please enter a password.")
-    winsound.MessageBeep(winsound.MB_ICONHAND)
 else:
     name = st.text_input("Enter your name", key="1")
     balance = st.text_input("Enter your balance.", key="2")
